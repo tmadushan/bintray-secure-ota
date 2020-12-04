@@ -17,9 +17,11 @@
 #include <Arduino.h>
 #include <WiFi.h>
 #include "SecureOTA.h"
+#include "non-blocking-utils.h"
 
 const uint16_t OTA_CHECK_INTERVAL = 3000; // ms
 uint32_t _lastOTACheck = 0;
+const int ledPin =  2;// the number of the LED pin
 
 void setup()
 {
@@ -41,6 +43,8 @@ void setup()
   _lastOTACheck = millis();
 
   // your setup code goes here
+  pinMode(ledPin, OUTPUT);
+
 }
 
 void loop()
@@ -51,4 +55,10 @@ void loop()
   }
 
   // your loop code goes here
+
+  digitalWrite(ledPin, HIGH);
+  non_blocking_delay(3000);
+
+  digitalWrite(ledPin, LOW);
+  non_blocking_delay(1000);
 }

@@ -43,7 +43,9 @@ void checkFirmwareUpdates()
   }
   else if (atoi(latest.c_str()) <= VERSION)
   {
-    Serial.println("The current firmware is up to date. Continue ...");
+    Serial.print("The current firmware v.");
+    Serial.print(latest);
+    Serial.println("is up to date. Continue ...");
     return;
   }
 
