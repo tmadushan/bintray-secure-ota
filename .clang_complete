@@ -5,7 +5,7 @@
 -I/home/tharanga/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src
 -I/home/tharanga/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src
 -I/home/tharanga/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src
--I/home/tharanga/Documents/Divolgo/OTA/bintray-secure-ota/.pio/libdeps/release/ArduinoJson/src
+-I/home/tharanga/Documents/Divolgo/OTA/bintray-secure-ota/.pio/libdeps/debug/ArduinoJson/src
 -I/home/tharanga/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/config
 -I/home/tharanga/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_trace
 -I/home/tharanga/.platformio/packages/framework-arduinoespressif32/tools/sdk/include/app_update
@@ -99,7 +99,7 @@
 -DBINTRAY_USER="tmadushan"
 -DBINTRAY_REPO="platformio-ota"
 -DBINTRAY_PACKAGE="bintray-secure-ota"
--DVERSION=1
+-DVERSION=0
 -DESP32
 -DESP_PLATFORM
 -DF_CPU=240000000L
