@@ -45,7 +45,7 @@ void checkFirmwareUpdates()
   {
     Serial.print("The current firmware v.");
     Serial.print(latest);
-    Serial.println("is up to date. Continue ...");
+    Serial.println(" is up to date. Continue with the loop ...");
     return;
   }
 

@@ -39,7 +39,7 @@ void setup()
     delay(500);
   }
 
-  Serial.println(" connected!");
+  Serial.println(" Connected!");
   _lastOTACheck = millis();
 
   // your setup code goes here
